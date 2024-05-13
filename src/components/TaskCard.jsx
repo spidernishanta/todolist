@@ -31,6 +31,7 @@ const TaskCard = ({task}) => {
               
               <div className="flex text-4xl">
               <RiEditCircleLine onClick={onOpen} className="cursor-pointer"/>
+              <IoMdTrash onClick={()=>deleteTask(task.id)} className="text-orange cursor-pointer"/>
               </div>
             </div>
             <AddUpdate task={task} isOpen={isOpen} onClose={onClose} isUpdate/>
