@@ -9,7 +9,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 const Validation = Yup.object().shape({
   Title: Yup.string().required(""),
-  Description: Yup.string().required(""),
+  Description: Yup.string(),
   Priority: Yup.number(),
   Deadline: Yup.date().nullable(),
 });
